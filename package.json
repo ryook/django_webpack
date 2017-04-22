@@ -1,0 +1,22 @@
+{
+  "name": "django_webpack",
+  "version": "1.0.0",
+  "description": "trial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "start": "webpack --progress --devtool source-map --watch",
+    "build": "webpack --progress --optimize-minimize"
+  },
+  "author": "ryo kato",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.4.1",
+    "webpack-bundle-tracker": "^0.2.0"
+  }
+}
