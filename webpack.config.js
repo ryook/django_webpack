@@ -11,7 +11,13 @@ module.exports = [{
         path: path.resolve('./assets/webpack-bundles/'),
         filename: "[name]-[hash].js"
     },
-
+    module: {
+      loaders: [{
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      }]
+    },
     plugins: [
       new BundleTracker({filename: './webpack_stats.json'})
     ]
